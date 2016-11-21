@@ -9,6 +9,7 @@ class ListItem extends Component {
     componentWillUpdate() {
         LayoutAnimation.easeInEaseOut();
     }
+
     renderDescription() {
         const { library, expanded } = this.props;
         if (expanded) {
@@ -19,6 +20,7 @@ class ListItem extends Component {
             );
         }
     }
+
     render() {
       const { titleStyle } = styles;
       const { id, title } = this.props.library;
